@@ -10,44 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/fontawesome-free-6.5.1-web 2/css/all.min.css">
     <link rel="stylesheet" href="/css/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
-    <style>
-      .logoImg {
-        width: 350px;
-        height: 100;
-      }
-      .Nav_Bar .nav-item a:hover{
-        color: #ff0000;;
-      }
-      .navbar {
-        padding: 0 1rem;
-      }
-      @media (min-width: 1000px) {
-        .navbar-collapse {
-          display: flex;
-          justify-content: end;
-        }
-      }
-      @media (min-width: 1300px) {
-        .navbar {
-          padding: 0 8rem;
-        }
-      }
-      @media (max-width: 700px) {
-        .logoImg {
-          width: 200px;
-          height: 80;
-      }
-      }
-      .nav-link {
-        color: #414141 !important
-      }
-      .nav-link:hover {
-        color: #ff0000 !important
-      }
-      .active {
-        color: #ff0000 ;
-      }
-    </style>
 </head>
 <body>
   <!-- === navbar ===  -->
@@ -97,23 +59,26 @@
     </div>
   </nav>
 <!-- === navbar === -->
-​<div class="contain">
-  <div class="text-center mt-5">
-      <div class="text">
-        <h1 class="text-center typed-text">ONE STOP SCHOOL SUPPLIER</h1>
-          <p class="text-center typed-text">Specialist school supplier offering Tech for AI and Digital Classrooms, Science and STEM equipment and <br> Teaching an Learning tools.
-            Serving over 100 schools and corporations since 2013.
-          </p>
+​<div class="container">
+  <div class="row text-center">
+      <div class="col col-12 text mt-xl-5">
+        <h1 class="text-center py-md-5" style="margin: 0;">ONE STOP SCHOOL SUPPLIER</h1>
+        <p class="text-center">
+          Specialist school supplier offering Tech for AI and Digital Classrooms, Science and STEM equipment and <br> Teaching an Learning tools.
+          Serving over 100 schools and corporations since 2013.
+        </p>
       </div>
           <br>
-      <div class="image">
-        <img src="/images/digital.jpeg" width="400;" >
+      <div class="col col-12 p-0">
+        <img alt="" src="/images/digital.jpeg" width="100%" height="auto" />
+      </div>
+      <div class="col col-12 p-0">
         <p class="text-center">
           MYTEB supplies schools with tools for the future of education.
           We work with teachers to overcome challenges in the era of AI and machine learning,
-           in this age of pixels and screens
+          in this age of pixels and screens
           We offer technology-driven learning tools,
-           hands-on science materials, and sustainable teaching supplies  
+          hands-on science materials, and sustainable teaching supplies  
           We help schools prepare students for next-generation jobs,and cultivate future leaders.
         </p>
       </div>
@@ -121,8 +86,6 @@
 </div>
 
 <!-- === container ===  -->
-
-<br><br> <br><br><br>
 <div class="container1 ">
     <div class="card-group">
       <div class="card">
@@ -151,7 +114,7 @@
 </div>
 <!-- ===== we offers ====  -->
 <div class="offers_container">
-  <h2 class="text-center">WHAT WE OFFER!</h2>
+  <h2 class="text-center pt-5">WHAT WE OFFER!</h2>
     <div id="digital" class="digital_classroom">
       <img src="/images/image.png" alt="">
       <h2 class="text-center p-4">AI & DIGITAL CLASSROOMS</h2><br>
@@ -173,7 +136,7 @@
       <a href="/html/digital.html">Explore more</a>
     </div>
     <div id="education" class="digital_classroom">
-      <img src="/images/edu.png" height="650"  >
+      <img src="/images/edu.png" height="auto"  >
       <h2 class="text-center p-4">EDUCATION SUPPLIES</h2><br>
       <p class="text-center px-2">Unlock Unlimited Potential: From laboratory essentials to educational resources,
        we provide everything you need to transform classrooms,research labs,  <br>
@@ -184,12 +147,11 @@
   </div>
 </div>
 <!-- what we have  -->
-<div class="category">
+<div class="container py-5">
   <h3 class="text-center text-warning">WHAT WE HAVE!</h3>
-  <img src="/images/cate.png" alt="">
-  <div class="wrapper">
-
-  </div>
+  <img src="/images/cate.png" width="100%" height="auto" alt="">
+  <!-- <div class="wrapper">
+  </div> -->
 </div>
 
 <!-- ===== brands =====  -->
@@ -599,11 +561,7 @@
 </div>
 </div>
 
-
-
-
 <!-- contact form -->
-
 
 <form action="https://formsubmit.co/phalsiphai18@email.com" class="container py-5 px-5 my-5 bg-light" method="POST">
   <h2 class="py-5 text-center">REACH OUT TO US</h2>
@@ -644,77 +602,97 @@
         </div>
     </div>
     
-    <div class=" col-md-8 mb-b">
-      <label for="validationTextarea">DESCRIPTION</label>
-      <textarea class="form-control invalid pb-5" id="validationTextarea" placeholder="textarea" required>
-      </textarea>
-      <div class="invalid-feedback">
-        Please enter a message in the textarea.
+      <div class=" col-md-8 mb-b">
+        <label for="validationTextarea">DESCRIPTION</label>
+        <textarea class="form-control invalid pb-5" id="validationTextarea" placeholder="textarea" required>
+        </textarea>
+        <div class="invalid-feedback">
+          Please enter a message in the textarea.
+        </div>
+      </div>
+      <div class="col-md-8">
+        <h6 class="my-4">AREA OF INTEREST</h6>
+      </div>
+      <div class="col-md-8">
+        <div class="custom-control custom-checkbox my-3">
+          <input type="checkbox" class="custom-control-input" id="customControlValidation1" >
+          <label class="custom-control-label" for="customControlValidation1">Google Chromebooks & Cloud computing</label>
+          <div class="invalid-feedback"></div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="custom-control custom-checkbox my-3">
+          <input type="checkbox" class="custom-control-input" id="customControlValidation2" >
+          <label class="custom-control-label" for="customControlValidation2">MYTEB Android Tablets</label>
+          <div class="invalid-feedback">Example invalid feedback text</div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="custom-control custom-checkbox my-3">
+          <input type="checkbox" class="custom-control-input" id="customControlValidation3" >
+          <label class="custom-control-label" for="customControlValidation3">Projectors and Interactive Displays</label>
+          <div class="invalid-feedback">Example invalid feedback text</div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="custom-control custom-checkbox my-3">
+          <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
+          <label class="custom-control-label" for="customControlValidation4">All in one Desktops, Server solutions</label>
+          <div class="invalid-feedback">Example invalid feedback text</div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="custom-control custom-checkbox my-3">
+          <input type="checkbox" class="custom-control-input" id="customControlValidation5" >
+          <label class="custom-control-label" for="customControlValidation5">STEM and Science Lab Equipment</label>
+          <div class="invalid-feedback">Example invalid feedback text</div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="custom-control custom-checkbox my-3">
+          <input type="checkbox" class="custom-control-input" id="customControlValidation6" >
+          <label class="custom-control-label" for="customControlValidation6">Coding and Robotics</label>
+          <div class="invalid-feedback">Example invalid feedback text</div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="custom-control custom-checkbox my-3">
+          <input type="checkbox" class="custom-control-input" id="customControlValidation7" >
+          <label class="custom-control-label" for="customControlValidation7">STEM Spaze</label>
+          <div class="invalid-feedback">Example invalid feedback text</div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="custom-control custom-checkbox my-3">
+          <input type="checkbox" class="custom-control-input" id="customControlValidation8" >
+          <label class="custom-control-label" for="customControlValidation8">Other...</label>
+          <div class="invalid-feedback">Example invalid feedback text</div>
+        </div>
+      </div>
+      <hr>
+      <div class="col-md-8">
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required >
+            <label class="form-check-label" for="invalidCheck3">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 d-flex justify-content-start">
+        <button class="btn btn-primary" type="submit">Submit Now</button>
       </div>
     </div>
-    </div>
   </div>
-  <div class="form_area mr-5">
-  <h6 class="my-4">AREA OF INTEREST</h6>
-  <div class="custom-control custom-checkbox my-3">
-    <input type="checkbox" class="custom-control-input" id="customControlValidation1" >
-    <label class="custom-control-label" for="customControlValidation1">Google Chromebooks & Cloud computing</label>
-    <div class="invalid-feedback"></div>
-  </div>
-  <div class="custom-control custom-checkbox my-3">
-    <input type="checkbox" class="custom-control-input" id="customControlValidation2" >
-    <label class="custom-control-label" for="customControlValidation2">MYTEB Android Tablets</label>
-    <div class="invalid-feedback">Example invalid feedback text</div>
-  </div>
-  <div class="custom-control custom-checkbox my-3">
-    <input type="checkbox" class="custom-control-input" id="customControlValidation3" >
-    <label class="custom-control-label" for="customControlValidation3">Projectors and Interactive Displays</label>
-    <div class="invalid-feedback">Example invalid feedback text</div>
-  </div>
-  <div class="custom-control custom-checkbox my-3">
-    <input type="checkbox" class="custom-control-input" id="customControlValidation4" >
-    <label class="custom-control-label" for="customControlValidation4">All in one Desktops, Server solutions</label>
-    <div class="invalid-feedback">Example invalid feedback text</div>
-  </div>
-  <div class="custom-control custom-checkbox my-3">
-    <input type="checkbox" class="custom-control-input" id="customControlValidation5" >
-    <label class="custom-control-label" for="customControlValidation5">STEM and Science Lab Equipment</label>
-    <div class="invalid-feedback">Example invalid feedback text</div>
-  </div>
-  <div class="custom-control custom-checkbox my-3">
-    <input type="checkbox" class="custom-control-input" id="customControlValidation6" >
-    <label class="custom-control-label" for="customControlValidation6">Coding and Robotics</label>
-    <div class="invalid-feedback">Example invalid feedback text</div>
-  </div>
-  <div class="custom-control custom-checkbox my-3">
-    <input type="checkbox" class="custom-control-input" id="customControlValidation7" >
-    <label class="custom-control-label" for="customControlValidation7">STEM Spaze</label>
-    <div class="invalid-feedback">Example invalid feedback text</div>
-  </div>
-  <div class="custom-control custom-checkbox my-3">
-    <input type="checkbox" class="custom-control-input" id="customControlValidation8" >
-    <label class="custom-control-label" for="customControlValidation8">Other...</label>
-    <div class="invalid-feedback">Example invalid feedback text</div>
-  </div>
-  <hr>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required >
-      <label class="form-check-label" for="invalidCheck3">
-        Agree to terms and conditions
-      </label>
-      <div class="invalid-feedback">
-        You must agree before submitting.
-      </div>
-    </div>
-  </div>
-</div>
-<button class="btn btn-primary" type="submit">Submit Now</button>
 </form>
 </div>
 
 <!-- footer -->
-<<footer class="site-footer">
+<footer class="site-footer">
   <div class="container">
   <div class="row">
   <div class="col-sm-12 col-md-6">
@@ -722,47 +700,47 @@
   <p class="text-justify">Specialist supplier in Digital Classrooms, STEM education and science equipment.
     Serving over 100 schools and customers since 2013</p>
   </div>
-  <div class="col-6 col-md-3">
-  <h6>Categories</h6>
-  <ul class="footer-links ">
-  <li><a href="#">Education Supply</a></li>
-  <li><a href="#">Techology Products</a></li>
-  <li><a href="#">Science Equitments</a></li>
-  <li><a href="#">Stem and Ai</a></li>
-  <li><a href="#">Mathmanipulatives</a></li>
-  <li><a href="#">Google chromebooks</a></li>
-  <li><a href="#">Android Tablets, iPADs</a></li>
-  </ul>
-  </div>
-  <div class="col-6 col-md-3">
-  <h6>Quick Links</h6>
-  <ul class="footer-links">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Customers</a></li>
-  <li><a href="https://maps.app.goo.gl/RpHxqUbfEx4WkipM6" target="_blank">Find us</a></li>
-  <li><a href="#">Contact</a></li>
-  <li><a href="#">SHOP</a></li>
-  </ul>
-  </div>
+    <div class="col-12 col-sm-3">
+      <h6>Categories</h6>
+      <ul class="footer-links ">
+        <li><a href="#">Education Supply</a></li>
+        <li><a href="#">Techology Products</a></li>
+        <li><a href="#">Science Equitments</a></li>
+        <li><a href="#">Stem and Ai</a></li>
+        <li><a href="#">Mathmanipulatives</a></li>
+        <li><a href="#">Google chromebooks</a></li>
+        <li><a href="#">Android Tablets, iPADs</a></li>
+      </ul>
+    </div>
+    <div class="col-12 col-sm-3 ">
+      <h6>Quick Links</h6>
+      <ul class="footer-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Customers</a></li>
+      <li><a href="https://maps.app.goo.gl/RpHxqUbfEx4WkipM6" target="_blank">Find us</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">SHOP</a></li>
+      </ul>
+    </div>
   </div>
   <hr class="small">
   </div>
   <div class="container" >
-  <div class="row">
-  <div class="col-md-8 col-sm-6 col-12">
-  <p class="copyright-text">Copyright © 2024 All Rights Reserved by 
-  <a href="#"><span class="logo">MYTEB Malaysia</span></a>
-  </p>
-  </div>
-  <div class="col-md-4 col-sm-6 col-12">
-  <ul class="social-icons">
-  <li><a class="twitter" href="tell+"><i class="fa-solid fa-phone"></i></a></li>
-  <li><a class="linkedin" href="#"><i class="fab fa-telegram"></i></a></li>
-  <li><a class="facebook" href="https://web.facebook.com/myteb.malaysia"><i class="fab fa-facebook-f"></i></a></li>
-  <li><a class="dribbble" href="#"><i class="fab fa-tiktok"></i></a></li>
-  </ul>
-  </div>
-  </div>
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-12">
+        <p class="copyright-text">Copyright © 2024 All Rights Reserved by 
+        <a href="#"><span class="logo">MYTEB Malaysia</span></a>
+        </p>
+      </div>
+      <div class="col-md-4 col-sm-6 col-12">
+        <ul class="social-icons">
+          <li><a class="twitter" href="tell+"><i class="fa-solid fa-phone"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fab fa-telegram"></i></a></li>
+          <li><a class="facebook" href="https://web.facebook.com/myteb.malaysia"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a class="dribbble" href="#"><i class="fab fa-tiktok"></i></a></li>
+        </ul>
+      </div>
+    </div>
   </div>
   </footer> 
 
