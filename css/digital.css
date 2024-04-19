@@ -13,7 +13,48 @@
   box-shadow: 1px 1px 4px rgb(239, 239, 239);
 
 }
-.nav .topnav .shop{
+
+/* ======================= newest update ================================= */
+.logoImg {
+  width: 350px;
+  height: 100;
+}
+.Nav_Bar .nav-item a:hover{
+  color: #ff0000;;
+}
+.navbar {
+  padding: 0 1rem;
+}
+@media (min-width: 1000px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: end;
+  }
+}
+@media (min-width: 1300px) {
+  .navbar {
+    padding: 0 8rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .logoImg {
+    width: 200px;
+    height: 80;
+  } 
+}
+.nav-link {
+  color: #414141 !important
+}
+.nav-link:hover {
+  color: #ff0000 !important
+}
+.active {
+  color: #ff0000 ;
+}
+/* ======================================================== */
+
+/* .nav .topnav .shop{
   position: absolute;
   right: 113px;
   margin-left: 2rem;
@@ -22,8 +63,8 @@
   background-color: #3a01e3;
   outline: 1px solid #3a01e3;
   cursor: pointer;
-}
-.nav .topnav .shop:hover{
+} */
+/* .nav .topnav .shop:hover{
   outline: none;
   background-color: #1212cd;
 }
@@ -53,8 +94,6 @@
   
   .topnav a.active {
     color: rgb(255, 0, 13);
-    /* text-decoration: underline; */
-
   }
   
   .topnav .icon {
@@ -70,25 +109,21 @@
       float: none;
       display: block;
       text-align: left;
-    }
+    } */
 
     /* video_display */
-    h2{
-      text-align: center;
-      padding: 1rem;
-    }
     .video_display {
       align-items: center;
     }
     
     .video__container {
       width: 60%;
-      margin-left: 22rem; /* This will center the video horizontally */
+      /* margin-left: 22rem; */
     }
 
     article{
-      width: 60%;
-      height: auto;
+      /* width: 60%; */
+      /* height: auto; */
       margin: 5rem auto;
     }
     article h3{
@@ -107,12 +142,11 @@
       justify-content: space-between;
 
     }
-    .intro img{
-      /* border: 1px solid #2ecc71; */
+    /* .intro img{
       width: 400px;
       height: 250px;
       margin-top: 2rem;
-    }
+    } */
     .intro h2{
       display: flex;
       justify-content: start;
@@ -120,14 +154,9 @@
     }
 
     article p{
-      width: 100%;
-      color: #777676;
-      font-size: .9rem;
-      font-weight: 300;
       letter-spacing: .2px;
     }
     .intro p{
-      width: 95%;
       color: #777676;
       font-size: .9rem;
       font-weight: 300;
@@ -136,7 +165,7 @@
 
     /* ==================*/
     h3{
-      margin:3rem  10rem;
+      /* margin:3rem  10rem; */
       color: #010101;
       font-size: 1.5rem;
 
@@ -181,11 +210,11 @@
     }
     
     .categories__title {
-      margin-top: 10rem;
+      /* margin-top: 10rem; */
       color: rgb(77, 55, 102);
       font-size: 28px;
-      position: relative;
-      padding: 2rem 14rem;
+      /* position: relative; */
+      /* padding: 2rem 14rem; */
     }
     
     .carousel-item {
